@@ -95,6 +95,13 @@
 		  data-show-faces="true">
 		</div>
 		</br>
+		<?php
+           $loginUrl    = $helper->getLoginUrl(['email,user_birthday']);
+           $connectLink = '<a href='.$loginUrl.'>Login</a>';
+           echo  $connectLink ;
+
+       	?>
+
 		<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="5" data-colorscheme="light"></div>
 
 	</body>
